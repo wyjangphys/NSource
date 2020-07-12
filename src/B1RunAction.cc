@@ -73,12 +73,12 @@ B1RunAction::B1RunAction()
   // Default settings
   analysisManager->SetNtupleMerging(true);
   analysisManager->SetVerboseLevel(1);
-  analysisManager->SetFileName("TAMU_ALP");
+  analysisManager->SetFileName("NSource");
   analysisManager->OpenFile();
 
   // Create 1-dimensional histogram
   //analysisManager->CreateH1("Egamma", "", 100000, 0, 100000);
-  analysisManager->CreateNtuple("TAMU_ALP", "TAMU_ALP");
+  analysisManager->CreateNtuple("NSource", "NSource");
   analysisManager->CreateNtupleSColumn("proc");
   analysisManager->CreateNtupleDColumn("Egamma");
   analysisManager->CreateNtupleDColumn("x");
